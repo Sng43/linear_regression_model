@@ -7,7 +7,7 @@
 **For this project, I developed a mobile app that leverages a Linear Regression model to predict the incidence of malaria (cases per 1000 people). The system analyzes key public health and demographic factors including bed net usage, antimalarial treatment rates, sanitation, urbanization, and water access to provide data-driven insights for malaria prevention.**
 
 ## Youtube Video Demonstration
-[Watch the video]()
+[Watch the video](https://youtu.be/VDZHezomdcs)
 
 
 ## Images of the some graphs from the model
