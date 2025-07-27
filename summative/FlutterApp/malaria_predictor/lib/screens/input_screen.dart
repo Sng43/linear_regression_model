@@ -10,7 +10,6 @@ class _InputScreenState extends State<InputScreen> {
   final _formKey = GlobalKey<FormState>();
 
   final Map<String, TextEditingController> _controllers = {
-    'malaria_cases_reported': TextEditingController(),
     'bed_net_use_pct': TextEditingController(),
     'fever_antimalarial_pct': TextEditingController(),
     'ipt_pregnancy_pct': TextEditingController(),
@@ -33,9 +32,6 @@ class _InputScreenState extends State<InputScreen> {
     if (number == null) return 'Must be a number';
 
     switch (key) {
-      case 'malaria_cases_reported':
-        if (number < 0) return 'Must be ≥ 0';
-        break;
       case 'bed_net_use_pct':
       case 'fever_antimalarial_pct':
       case 'ipt_pregnancy_pct':
