@@ -26,7 +26,6 @@ app.add_middleware(
 
 # Input Schema
 class MalariaFeatures(BaseModel):
-    malaria_cases_reported: float = Field(..., ge=0, description="Number of malaria cases reported")
     bed_net_use_pct: float = Field(..., ge=0, le=100, description="Bed net usage (%)")
     fever_antimalarial_pct: float = Field(..., ge=0, le=100, description="Children with fever receiving antimalarials (%)")
     ipt_pregnancy_pct: float = Field(..., ge=0, le=100, description="IPT of malaria in pregnancy (%)")
@@ -40,7 +39,6 @@ class MalariaFeatures(BaseModel):
 def predict_malaria(data: MalariaFeatures):
     # Extract and transform input
     features = np.array([[ 
-        data.malaria_cases_reported,
         data.bed_net_use_pct,
         data.fever_antimalarial_pct,
         data.ipt_pregnancy_pct,
