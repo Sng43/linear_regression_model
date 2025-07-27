@@ -10,7 +10,7 @@
 [Watch the video]()
 
 
-## Images of the App
+## Images of the some graphs from the model
 ![Crop Recommendation App](summative/images/image1.png)
 ![Crop Recommendation App](summative/images/image2.png)
 
